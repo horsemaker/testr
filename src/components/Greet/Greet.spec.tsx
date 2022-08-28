@@ -17,16 +17,16 @@ describe("Greet without name", () => {
   });
 });
 
-// describe("Greet with name", () => {
-//   it("renders with the name Yash", () => {
-//     render(<Greet name="Yash" />);
-//     const textElement = screen.getByText("Hello Yash");
-//     expect(textElement).toBeInTheDocument();
-//   });
+describe("Greet with name", () => {
+  it("renders with the name Yash", () => {
+    render(<Greet name="Yash" />);
+    const textElement = screen.getByText("Hello Yash");
+    expect(textElement).toBeInTheDocument();
+  });
 
-//   it("renders with the name Codevolution", () => {
-//     render(<Greet name="Codevolution" />);
-//     const textElement = screen.getByText("Hello Codevolution");
-//     expect(textElement).toBeInTheDocument();
-//   });
-// });
+  it("renders with the name Codevolution", () => {
+    render(<Greet name="Codevolution" />);
+    const textElement = screen.getByText("Hello Codevolution");
+    expect(textElement).toBeInTheDocument();
+  });
+});
